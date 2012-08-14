@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBDF0A3A15DA5DCF001A1F0D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDF0A3915DA5DCF001A1F0D /* Cocoa.framework */; };
+		CBDF0A4415DA5DCF001A1F0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A4215DA5DCF001A1F0D /* InfoPlist.strings */; };
+		CBDF0A4615DA5DCF001A1F0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDF0A4515DA5DCF001A1F0D /* main.m */; };
+		CBDF0A4A15DA5DCF001A1F0D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A4815DA5DCF001A1F0D /* Credits.rtf */; };
+		CBDF0A4D15DA5DCF001A1F0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDF0A4C15DA5DCF001A1F0D /* AppDelegate.m */; };
+		CBDF0A5015DA5DCF001A1F0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A4E15DA5DCF001A1F0D /* MainMenu.xib */; };
+		CBDF0A5815DA606B001A1F0D /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A5715DA606B001A1F0D /* sample.tiff */; };
+		CBDF0A5C15DA6156001A1F0D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDF0A5B15DA6156001A1F0D /* WebKit.framework */; };
+		CBDF0A6115DA63B6001A1F0D /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A5D15DA63B6001A1F0D /* sample.png */; };
+		CBDF0A6215DA63B6001A1F0D /* sample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A5E15DA63B6001A1F0D /* sample@2x.png */; };
+		CBDF0A6315DA63B6001A1F0D /* samplePNG.html in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A5F15DA63B6001A1F0D /* samplePNG.html */; };
+		CBDF0A6415DA63B6001A1F0D /* sampleTIFF.html in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A6015DA63B6001A1F0D /* sampleTIFF.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBDF0A3515DA5DCF001A1F0D /* RetinaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetinaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDF0A3915DA5DCF001A1F0D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CBDF0A3C15DA5DCF001A1F0D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CBDF0A3D15DA5DCF001A1F0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CBDF0A3E15DA5DCF001A1F0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBDF0A4115DA5DCF001A1F0D /* RetinaTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetinaTest-Info.plist"; sourceTree = "<group>"; };
+		CBDF0A4315DA5DCF001A1F0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBDF0A4515DA5DCF001A1F0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBDF0A4715DA5DCF001A1F0D /* RetinaTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetinaTest-Prefix.pch"; sourceTree = "<group>"; };
+		CBDF0A4915DA5DCF001A1F0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CBDF0A4B15DA5DCF001A1F0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBDF0A4C15DA5DCF001A1F0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBDF0A4F15DA5DCF001A1F0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CBDF0A5715DA606B001A1F0D /* sample.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = sample.tiff; sourceTree = "<group>"; };
+		CBDF0A5B15DA6156001A1F0D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CBDF0A5D15DA63B6001A1F0D /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		CBDF0A5E15DA63B6001A1F0D /* sample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample@2x.png"; sourceTree = "<group>"; };
+		CBDF0A5F15DA63B6001A1F0D /* samplePNG.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = samplePNG.html; sourceTree = "<group>"; };
+		CBDF0A6015DA63B6001A1F0D /* sampleTIFF.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sampleTIFF.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBDF0A3215DA5DCF001A1F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDF0A5C15DA6156001A1F0D /* WebKit.framework in Frameworks */,
+				CBDF0A3A15DA5DCF001A1F0D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBDF0A2A15DA5DCF001A1F0D = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A5B15DA6156001A1F0D /* WebKit.framework */,
+				CBDF0A5615DA6057001A1F0D /* Resources */,
+				CBDF0A3F15DA5DCF001A1F0D /* RetinaTest */,
+				CBDF0A3815DA5DCF001A1F0D /* Frameworks */,
+				CBDF0A3615DA5DCF001A1F0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBDF0A3615DA5DCF001A1F0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A3515DA5DCF001A1F0D /* RetinaTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBDF0A3815DA5DCF001A1F0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A3915DA5DCF001A1F0D /* Cocoa.framework */,
+				CBDF0A3B15DA5DCF001A1F0D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBDF0A3B15DA5DCF001A1F0D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A3C15DA5DCF001A1F0D /* AppKit.framework */,
+				CBDF0A3D15DA5DCF001A1F0D /* CoreData.framework */,
+				CBDF0A3E15DA5DCF001A1F0D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CBDF0A3F15DA5DCF001A1F0D /* RetinaTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A4B15DA5DCF001A1F0D /* AppDelegate.h */,
+				CBDF0A4C15DA5DCF001A1F0D /* AppDelegate.m */,
+				CBDF0A4E15DA5DCF001A1F0D /* MainMenu.xib */,
+				CBDF0A4015DA5DCF001A1F0D /* Supporting Files */,
+			);
+			path = RetinaTest;
+			sourceTree = "<group>";
+		};
+		CBDF0A4015DA5DCF001A1F0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A4115DA5DCF001A1F0D /* RetinaTest-Info.plist */,
+				CBDF0A4215DA5DCF001A1F0D /* InfoPlist.strings */,
+				CBDF0A4515DA5DCF001A1F0D /* main.m */,
+				CBDF0A4715DA5DCF001A1F0D /* RetinaTest-Prefix.pch */,
+				CBDF0A4815DA5DCF001A1F0D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBDF0A5615DA6057001A1F0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF0A6515DA6407001A1F0D /* label */,
+				CBDF0A5D15DA63B6001A1F0D /* sample.png */,
+				CBDF0A5E15DA63B6001A1F0D /* sample@2x.png */,
+				CBDF0A5F15DA63B6001A1F0D /* samplePNG.html */,
+				CBDF0A6015DA63B6001A1F0D /* sampleTIFF.html */,
+				CBDF0A5715DA606B001A1F0D /* sample.tiff */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBDF0A6515DA6407001A1F0D /* label */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = label;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBDF0A3415DA5DCF001A1F0D /* RetinaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDF0A5315DA5DCF001A1F0D /* Build configuration list for PBXNativeTarget "RetinaTest" */;
+			buildPhases = (
+				CBDF0A3115DA5DCF001A1F0D /* Sources */,
+				CBDF0A3215DA5DCF001A1F0D /* Frameworks */,
+				CBDF0A3315DA5DCF001A1F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetinaTest;
+			productName = RetinaTest;
+			productReference = CBDF0A3515DA5DCF001A1F0D /* RetinaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBDF0A2C15DA5DCF001A1F0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = BeamApp;
+			};
+			buildConfigurationList = CBDF0A2F15DA5DCF001A1F0D /* Build configuration list for PBXProject "RetinaTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBDF0A2A15DA5DCF001A1F0D;
+			productRefGroup = CBDF0A3615DA5DCF001A1F0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBDF0A3415DA5DCF001A1F0D /* RetinaTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBDF0A3315DA5DCF001A1F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDF0A4415DA5DCF001A1F0D /* InfoPlist.strings in Resources */,
+				CBDF0A4A15DA5DCF001A1F0D /* Credits.rtf in Resources */,
+				CBDF0A5015DA5DCF001A1F0D /* MainMenu.xib in Resources */,
+				CBDF0A5815DA606B001A1F0D /* sample.tiff in Resources */,
+				CBDF0A6115DA63B6001A1F0D /* sample.png in Resources */,
+				CBDF0A6215DA63B6001A1F0D /* sample@2x.png in Resources */,
+				CBDF0A6315DA63B6001A1F0D /* samplePNG.html in Resources */,
+				CBDF0A6415DA63B6001A1F0D /* sampleTIFF.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBDF0A3115DA5DCF001A1F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDF0A4615DA5DCF001A1F0D /* main.m in Sources */,
+				CBDF0A4D15DA5DCF001A1F0D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBDF0A4215DA5DCF001A1F0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDF0A4315DA5DCF001A1F0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CBDF0A4815DA5DCF001A1F0D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDF0A4915DA5DCF001A1F0D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CBDF0A4E15DA5DCF001A1F0D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDF0A4F15DA5DCF001A1F0D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBDF0A5115DA5DCF001A1F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CBDF0A5215DA5DCF001A1F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CBDF0A5415DA5DCF001A1F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetinaTest/RetinaTest-Prefix.pch";
+				INFOPLIST_FILE = "RetinaTest/RetinaTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBDF0A5515DA5DCF001A1F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetinaTest/RetinaTest-Prefix.pch";
+				INFOPLIST_FILE = "RetinaTest/RetinaTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBDF0A2F15DA5DCF001A1F0D /* Build configuration list for PBXProject "RetinaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDF0A5115DA5DCF001A1F0D /* Debug */,
+				CBDF0A5215DA5DCF001A1F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDF0A5315DA5DCF001A1F0D /* Build configuration list for PBXNativeTarget "RetinaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDF0A5415DA5DCF001A1F0D /* Debug */,
+				CBDF0A5515DA5DCF001A1F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBDF0A2C15DA5DCF001A1F0D /* Project object */;
+}

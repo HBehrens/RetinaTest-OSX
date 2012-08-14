@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div {
+			width: 50px;
+			height: 50px;
+			background-size: 50px 50px;
+			background-image: url(sample.png);
+		}
+		
+		@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+		      div {
+		        background-image: url(sample@2x.png);  
+		      }
+		}
+		
+		h1 {
+			font-size: 10pt;
+			font-weight: normal;
+		}
+	</style>
+</head>	
+<body>
+	<h1>img tag</h1>
+	<img src="sample.png">
+	<h1>css background</h1>
+	<div></div>
+</body>
+</html>
