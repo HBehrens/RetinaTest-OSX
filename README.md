@@ -5,6 +5,8 @@ This Cocoa app has been tested on OSX Lion and OSX Mountain Lion.
 It demonstrates various techniques to render a sample image according to the display's pixel density.
 The given sample image comes in two flavours "LoDPI" at 50x50px and "HiDPI" 100x100px so you can easily tell them apart.
 
+![Screenshot](https://raw.github.com/HBehrens/RetinaTest-OSX/master/Resources/screenshot.png "Screenshot")
+
 Currently, these techniques are tested:
 
  * PNG-suffix `@2x` on an `NSImage`
