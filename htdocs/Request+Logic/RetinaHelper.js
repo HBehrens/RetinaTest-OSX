@@ -2,6 +2,7 @@
     //http://javascript.nwbox.com/ContentLoaded by Diego Perini with modifications
     function contentLoaded(n,t){var l="complete",s="readystatechange",u=!1,h=u,c=!0,i=n.document,a=i.documentElement,e=i.addEventListener?"addEventListener":"attachEvent",v=i.addEventListener?"removeEventListener":"detachEvent",f=i.addEventListener?"":"on",r=function(e){(e.type!=s||i.readyState==l)&&((e.type=="load"?n:i)[v](f+e.type,r,u),!h&&(h=!0)&&t.call(n,null))},o=function(){try{a.doScroll("left")}catch(n){setTimeout(o,50);return}r("poll")};if(i.readyState==l)t.call(n,"lazy");else{if(i.createEventObject&&a.doScroll){try{c=!n.frameElement}catch(y){}c&&o()}i[e](f+"DOMContentLoaded",r,u),i[e](f+s,r,u),n[e](f+"load",r,u)}};
 
+    var cacheBusterValue;
     function adjustedImageURL(url) {
         if(url.indexOf("file:") != 0)
             return url;
@@ -9,11 +10,12 @@
         // just a cache buster, magic lies in request handler
         if(url.indexOf("?") >= 0)
             url = url.replace(/\?cacheBuster=\d*/, "");
-        return url + "?cacheBuster=" + new Date().getTime().toString();
+
+        return url + "?cacheBuster=" + cacheBusterValue;
     }
 
     function reloadAllImages() {
-        console.log("reloadAllImages");
+        cacheBusterValue = new Date().getTime().toString();
 
         // reload images in img tags
         var all = document.getElementsByTagName("img");
