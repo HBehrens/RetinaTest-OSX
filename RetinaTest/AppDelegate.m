@@ -20,9 +20,29 @@
 
 @synthesize window = _window;
 
+-(void)loadContent {
+    NSURL *url;
+    
+    url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"htdocs/MediaQuery"];
+    [_webViewPNG.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"htdocs/MultiResTiff"];
+    [_webViewTIFF.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"htdocs/Request+Logic"];
+    [_webViewLogic.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    // alow web inspector for logic webview 
+    WebPreferences *webPrefs = [WebPreferences standardPreferences];
+    [webPrefs setDeveloperExtrasEnabled:YES];
+    _webViewLogic.preferences = webPrefs;
+//    id inspector = [[NSClassFromString(@"WebInspectorWindowController") alloc] performSelector:@selector(initWithInspectedWebView:) withObject:_webViewLogic];
+//    [inspector performSelector:@selector(showWebInspector:) withObject:nil afterDelay:1.3];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self reloadContent:nil];
+    [self loadContent];
 }
 
 -(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
@@ -30,22 +50,9 @@
 }
 
 - (IBAction)reloadContent:(id)sender {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"samplePNG" withExtension:@"html"];
-    [_webViewPNG.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
-    
-    url = [[NSBundle mainBundle] URLForResource:@"sampleTIFF" withExtension:@"html"];
-    [_webViewTIFF.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
-    
-    url = [[NSBundle mainBundle] URLForResource:@"sampleJS" withExtension:@"html"];
-    [_webViewLogic.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
-    
-
-    // show inspector for logic webview 
-//    WebPreferences *webPrefs = [WebPreferences standardPreferences];
-//    [webPrefs setDeveloperExtrasEnabled:YES];
-//    _webViewLogic.preferences = webPrefs;
-//    id inspector = [[NSClassFromString(@"WebInspectorWindowController") alloc] performSelector:@selector(initWithInspectedWebView:) withObject:_webViewLogic];
-//    [inspector performSelector:@selector(showWebInspector:) withObject:nil afterDelay:1.3];
+    [_webViewPNG reload:nil];
+    [_webViewLogic reload:nil];
+    [_webViewTIFF reload:nil];
 }
 
 #pragma mark - WebResourceLoadDelegate
