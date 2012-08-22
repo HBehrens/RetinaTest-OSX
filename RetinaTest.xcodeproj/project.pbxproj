@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB4F68AA15DBBDB900EC8DBB /* sampleJS.html in Resources */ = {isa = PBXBuildFile; fileRef = CB4F68A915DBBDB900EC8DBB /* sampleJS.html */; };
 		CBCCF74815E5135E00AB3B92 /* jquery-1.8.0.js in Resources */ = {isa = PBXBuildFile; fileRef = CB4F68AC15DBD02200EC8DBB /* jquery-1.8.0.js */; };
+		CBCCF74B15E517A400AB3B92 /* NSURL+Retina.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCCF74A15E517A400AB3B92 /* NSURL+Retina.m */; };
 		CBDF0A3A15DA5DCF001A1F0D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDF0A3915DA5DCF001A1F0D /* Cocoa.framework */; };
 		CBDF0A4415DA5DCF001A1F0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBDF0A4215DA5DCF001A1F0D /* InfoPlist.strings */; };
 		CBDF0A4615DA5DCF001A1F0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDF0A4515DA5DCF001A1F0D /* main.m */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		CB4F68A915DBBDB900EC8DBB /* sampleJS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sampleJS.html; sourceTree = "<group>"; };
 		CB4F68AC15DBD02200EC8DBB /* jquery-1.8.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.0.js"; sourceTree = "<group>"; };
+		CBCCF74915E517A400AB3B92 /* NSURL+Retina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Retina.h"; sourceTree = "<group>"; };
+		CBCCF74A15E517A400AB3B92 /* NSURL+Retina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Retina.m"; sourceTree = "<group>"; };
 		CBDF0A3515DA5DCF001A1F0D /* RetinaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetinaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDF0A3915DA5DCF001A1F0D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CBDF0A3C15DA5DCF001A1F0D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,8 @@
 			children = (
 				CBDF0A4B15DA5DCF001A1F0D /* AppDelegate.h */,
 				CBDF0A4C15DA5DCF001A1F0D /* AppDelegate.m */,
+				CBCCF74915E517A400AB3B92 /* NSURL+Retina.h */,
+				CBCCF74A15E517A400AB3B92 /* NSURL+Retina.m */,
 				CBDF0A4E15DA5DCF001A1F0D /* MainMenu.xib */,
 				CBDF0A4015DA5DCF001A1F0D /* Supporting Files */,
 			);
@@ -216,6 +221,7 @@
 			files = (
 				CBDF0A4615DA5DCF001A1F0D /* main.m in Sources */,
 				CBDF0A4D15DA5DCF001A1F0D /* AppDelegate.m in Sources */,
+				CBCCF74B15E517A400AB3B92 /* NSURL+Retina.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
