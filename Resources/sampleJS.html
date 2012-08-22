@@ -1,49 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="jquery-1.8.0.js"></script>
-    <script>
-        function adjustedImageURL(url) {
-            if(url.indexOf("file:") != 0)
-                return url;
-
-            // just a cache buster, magic lies in request handler
-            if(url.indexOf("?") >= 0)
-                url = url.replace(/\?cacheBuster=\d*/, "");
-            return url + "?cacheBuster=" + new Date().getTime().toString();
-        }
-
-        function reloadAllImages() {
-            var all = document.getElementsByTagName("img");
-            for (var i=0, max=all.length; i < max; i++) {
-                var img = all[i];
-                img.src = adjustedImageURL(img.src);
-            }
-            $("*").each(function(){
-                var bg = $(this).css("background-image");
-                //console.log(bg);
-                if(bg != "none") {
-                    var url = /url\((.*)\)/i.exec(bg);
-                    if (url) {
-                        console.log(url);
-                        $(this).css("background-image", "url(" + adjustedImageURL(url[1]) + ")");
-                    }
-                }
-            });
-
-        }
-
-        function callIfPixelRatioChanged(func, previous) {
-            var ratio = window.devicePixelRatio;
-            if(ratio != previous) {
-                func(ratio);
-            }
-            setTimeout(function(){callIfPixelRatioChanged(func, ratio)}, 100);
-        }
-
-        callIfPixelRatioChanged(reloadAllImages, window.devicePixelRatio);
-
-    </script>
+    <script src="RetinaHelper.js"></script>
 	<style>
         div, img {
 			width: 50px;
