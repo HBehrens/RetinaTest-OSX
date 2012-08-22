@@ -1316,7 +1316,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {527, 288}}</string>
+				<string key="NSWindowRect">{{335, 390}, {603, 299}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">RetinaTest</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1340,7 +1340,7 @@
 							<string key="NSFrame">{{118, 130}, {90, 90}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="802873102"/>
+							<reference key="NSNextKeyView" ref="851288570"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="30482552">
@@ -1348,7 +1348,7 @@
 								<int key="NSCellFlags2">33554432</int>
 								<object class="NSCustomResource" key="NSContents">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">sample.tiff</string>
+									<string key="NSResourceName">image.tiff</string>
 								</object>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<int key="NSAlign">0</int>
@@ -1357,44 +1357,6 @@
 								<bool key="NSAnimates">NO</bool>
 							</object>
 							<bool key="NSEditable">YES</bool>
-						</object>
-						<object class="WebView" id="175097299">
-							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">256</int>
-							<set class="NSMutableSet" key="NSDragTypes">
-								<string>Apple HTML pasteboard type</string>
-								<string>Apple PDF pasteboard type</string>
-								<string>Apple PICT pasteboard type</string>
-								<string>Apple URL pasteboard type</string>
-								<string>Apple Web Archive pasteboard type</string>
-								<string>NSColor pasteboard type</string>
-								<string>NSFilenamesPboardType</string>
-								<string>NSStringPboardType</string>
-								<string>NeXT RTFD pasteboard type</string>
-								<string>NeXT Rich Text Format v1.0 pasteboard type</string>
-								<string>NeXT TIFF v4.0 pasteboard type</string>
-								<string>WebURLsWithTitlesPboardType</string>
-								<string>public.png</string>
-								<string>public.url</string>
-								<string>public.url-name</string>
-							</set>
-							<string key="NSFrame">{{216, 20}, {90, 200}}</string>
-							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
-							<string key="NSReuseIdentifierKey">_NS:9</string>
-							<string key="FrameName"/>
-							<string key="GroupName"/>
-							<object class="WebPreferences" key="Preferences" id="282719022">
-								<string key="Identifier"/>
-								<dictionary class="NSMutableDictionary" key="Values">
-									<integer value="12" key="WebKitDefaultFixedFontSize"/>
-									<integer value="12" key="WebKitDefaultFontSize"/>
-									<integer value="1" key="WebKitMinimumFontSize"/>
-								</dictionary>
-							</object>
-							<bool key="UseBackForwardList">YES</bool>
-							<bool key="AllowsUndo">YES</bool>
 						</object>
 						<object class="WebView" id="429314742">
 							<reference key="NSNextResponder" ref="439893737"/>
@@ -1416,14 +1378,21 @@
 								<string>public.url</string>
 								<string>public.url-name</string>
 							</set>
-							<string key="NSFrame">{{319, 20}, {90, 200}}</string>
+							<string key="NSFrame">{{216, 20}, {180, 200}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="FrameName"/>
 							<string key="GroupName"/>
-							<reference key="Preferences" ref="282719022"/>
+							<object class="WebPreferences" key="Preferences" id="282719022">
+								<string key="Identifier"/>
+								<dictionary class="NSMutableDictionary" key="Values">
+									<integer value="12" key="WebKitDefaultFixedFontSize"/>
+									<integer value="12" key="WebKitDefaultFontSize"/>
+									<integer value="1" key="WebKitMinimumFontSize"/>
+								</dictionary>
+							</object>
 							<bool key="UseBackForwardList">YES</bool>
 							<bool key="AllowsUndo">YES</bool>
 						</object>
@@ -1433,7 +1402,7 @@
 							<string key="NSFrame">{{14, 12}, {200, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="175097299"/>
+							<reference key="NSNextKeyView" ref="429314742"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="346397919">
@@ -1455,22 +1424,22 @@
 								<int key="NSPeriodicInterval">25</int>
 							</object>
 						</object>
-						<object class="NSTextField" id="215391323">
+						<object class="NSTextField" id="385506773">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{216, 228}, {90, 40}}</string>
+							<string key="NSFrame">{{115, 219}, {90, 60}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="652539021"/>
 							<string key="NSReuseIdentifierKey">_NS:1505</string>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="665487481">
+							<object class="NSTextFieldCell" key="NSCell" id="60115552">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">138412032</int>
-								<string key="NSContents">media queries</string>
+								<string key="NSContents">TIFF in NSImage</string>
 								<reference key="NSSupport" ref="660614011"/>
 								<string key="NSCellIdentifier">_NS:1505</string>
-								<reference key="NSControlView" ref="215391323"/>
+								<reference key="NSControlView" ref="385506773"/>
 								<object class="NSColor" key="NSBackgroundColor" id="398280557">
 									<int key="NSColorSpace">6</int>
 									<string key="NSCatalogName">System</string>
@@ -1489,26 +1458,6 @@
 										<bytes key="NSWhite">MAA</bytes>
 									</object>
 								</object>
-							</object>
-						</object>
-						<object class="NSTextField" id="385506773">
-							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{115, 228}, {90, 40}}</string>
-							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="215391323"/>
-							<string key="NSReuseIdentifierKey">_NS:1505</string>
-							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="60115552">
-								<int key="NSCellFlags">67239424</int>
-								<int key="NSCellFlags2">138412032</int>
-								<string key="NSContents">TIFF in NSImage</string>
-								<reference key="NSSupport" ref="660614011"/>
-								<string key="NSCellIdentifier">_NS:1505</string>
-								<reference key="NSControlView" ref="385506773"/>
-								<reference key="NSBackgroundColor" ref="398280557"/>
-								<reference key="NSTextColor" ref="162150707"/>
 							</object>
 						</object>
 						<object class="NSImageView" id="706356935">
@@ -1533,7 +1482,7 @@
 								<int key="NSCellFlags2">33554432</int>
 								<object class="NSCustomResource" key="NSContents">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">sample.png</string>
+									<string key="NSResourceName">image.png</string>
 								</object>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<int key="NSAlign">0</int>
@@ -1546,7 +1495,7 @@
 						<object class="NSTextField" id="708648346">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 228}, {90, 40}}</string>
+							<string key="NSFrame">{{17, 219}, {90, 60}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="385506773"/>
@@ -1566,7 +1515,7 @@
 						<object class="NSTextField" id="652539021">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{319, 228}, {90, 40}}</string>
+							<string key="NSFrame">{{218, 219}, {181, 60}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="706356935"/>
@@ -1574,8 +1523,8 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="407416815">
 								<int key="NSCellFlags">67239424</int>
-								<int key="NSCellFlags2">138412032</int>
-								<string key="NSContents">multi-image TIFF</string>
+								<int key="NSCellFlags2">4194304</int>
+								<string key="NSContents">multi-resolution TIFF in image and background css</string>
 								<reference key="NSSupport" ref="660614011"/>
 								<string key="NSCellIdentifier">_NS:1505</string>
 								<reference key="NSControlView" ref="652539021"/>
@@ -1603,7 +1552,7 @@
 								<string>public.url</string>
 								<string>public.url-name</string>
 							</set>
-							<string key="NSFrame">{{420, 20}, {90, 200}}</string>
+							<string key="NSFrame">{{405, 20}, {180, 200}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -1617,15 +1566,17 @@
 						<object class="NSTextField" id="851288570">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{420, 228}, {90, 40}}</string>
+							<string key="NSFrame">{{401, 219}, {185, 60}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="802873102"/>
 							<string key="NSReuseIdentifierKey">_NS:1505</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="573526351">
 								<int key="NSCellFlags">67239424</int>
-								<int key="NSCellFlags2">138412032</int>
-								<string key="NSContents">request logic and reload</string>
+								<int key="NSCellFlags2">4194304</int>
+								<string type="base64-UTF8" key="NSContents">Y29uZGl0aW9uYWwgcmVzb3VyY2UgbG9hZGluZworIFJldGluYUhlbHBlci5qcworIE1lZGlhIFF1ZXJp
+ZXM</string>
 								<reference key="NSSupport" ref="660614011"/>
 								<string key="NSCellIdentifier">_NS:1505</string>
 								<reference key="NSControlView" ref="851288570"/>
@@ -1634,7 +1585,7 @@
 							</object>
 						</object>
 					</array>
-					<string key="NSFrameSize">{527, 288}</string>
+					<string key="NSFrameSize">{603, 299}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="708648346"/>
@@ -2334,14 +2285,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">webViewPNG</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="175097299"/>
-					</object>
-					<int key="connectionID">663</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">webViewTIFF</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="429314742"/>
@@ -2897,17 +2840,15 @@
 						<int key="objectID">372</int>
 						<reference key="object" ref="439893737"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="802873102"/>
-							<reference ref="706356935"/>
-							<reference ref="708648346"/>
-							<reference ref="992076016"/>
 							<reference ref="385506773"/>
-							<reference ref="175097299"/>
-							<reference ref="429314742"/>
-							<reference ref="306403451"/>
-							<reference ref="851288570"/>
+							<reference ref="708648346"/>
 							<reference ref="652539021"/>
-							<reference ref="215391323"/>
+							<reference ref="851288570"/>
+							<reference ref="992076016"/>
+							<reference ref="429314742"/>
+							<reference ref="706356935"/>
+							<reference ref="306403451"/>
+							<reference ref="802873102"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3398,29 +3339,10 @@
 						<reference key="parent" ref="992076016"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">559</int>
-						<reference key="object" ref="175097299"/>
-						<array class="NSMutableArray" key="children"/>
-						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">643</int>
 						<reference key="object" ref="429314742"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">719</int>
-						<reference key="object" ref="215391323"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="665487481"/>
-						</array>
-						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">720</int>
-						<reference key="object" ref="665487481"/>
-						<reference key="parent" ref="215391323"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">802</int>
@@ -3658,16 +3580,13 @@
 				<string key="534.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="536.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="537.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="559.IBPluginDependency">com.apple.WebKitIBPlugin</string>
 				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="569.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="570.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="58.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="643.IBPluginDependency">com.apple.WebKitIBPlugin</string>
-				<string key="719.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="720.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="75.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3706,11 +3625,16 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="webViewLogic">WebView</string>
 						<string key="webViewPNG">WebView</string>
 						<string key="webViewTIFF">WebView</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="webViewLogic">
+							<string key="name">webViewLogic</string>
+							<string key="candidateClassName">WebView</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="webViewPNG">
 							<string key="name">webViewPNG</string>
 							<string key="candidateClassName">WebView</string>
@@ -3742,8 +3666,8 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="NSMenuCheckmark">{11, 11}</string>
 			<string key="NSMenuMixedState">{10, 3}</string>
-			<string key="sample.png">{128, 128}</string>
-			<string key="sample.tiff">{128, 128}</string>
+			<string key="image.png">{128, 128}</string>
+			<string key="image.tiff">{128, 128}</string>
 		</dictionary>
 	</data>
 </archive>

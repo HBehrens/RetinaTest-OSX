@@ -6,26 +6,40 @@
         div, img {
 			width: 50px;
 			height: 50px;
+            margin: 0 auto 0 auto;
+            display: block;
         }
-        
-		div {
-			background-image: url(sample.png);
+
+        div {
             background-size: 50px 50px;
+            background-image: url(background.png);
         }
 
         div:hover {
-            background-image: url(sampleHover.png);
+            background-image: url(backgroundHover.png);
         }
 
-		h1 {
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+            div {
+                background-image: url(background@2x.png);
+            }
+
+            div:hover {
+                background-image: url(backgroundHover@2x.png);
+            }
+        }
+
+        h1 {
 			font-size: 10pt;
 			font-weight: normal;
+            text-align: center;
 		}
-	</style>
+
+    </style>
 </head>	
 <body>
 	<h1>img tag</h1>
-	<img src="sample.png">
+	<img src="image.png">
 	<h1>css background</h1>
 	<div></div>
 </body>

@@ -14,7 +14,6 @@
 @end
 
 @implementation AppDelegate
-@synthesize webViewPNG = _webViewPNG;
 @synthesize webViewTIFF = _webViewTIFF;
 @synthesize webViewLogic = _webViewLogic;
 
@@ -22,9 +21,6 @@
 
 -(void)loadContent {
     NSURL *url;
-    
-    url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"htdocs/MediaQuery"];
-    [_webViewPNG.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
     
     url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html" subdirectory:@"htdocs/MultiResTiff"];
     [_webViewTIFF.mainFrame loadRequest:[NSURLRequest requestWithURL:url]];
@@ -50,7 +46,6 @@
 }
 
 - (IBAction)reloadContent:(id)sender {
-    [_webViewPNG reload:nil];
     [_webViewLogic reload:nil];
     [_webViewTIFF reload:nil];
 }

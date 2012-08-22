@@ -13,7 +13,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 - (IBAction)reloadContent:(id)sender;
-@property (weak) IBOutlet WebView *webViewPNG;
 @property (weak) IBOutlet WebView *webViewTIFF;
 @property (weak) IBOutlet WebView *webViewLogic;
 
